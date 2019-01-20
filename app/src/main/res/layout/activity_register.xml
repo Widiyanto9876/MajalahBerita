@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/ed_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="15sp"
+        android:layout_below="@+id/ed_nama"/>
+
+    <EditText
+        android:id="@+id/ed_rg_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_email"
+        android:hint="User Name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_rg_user"
+        android:hint="Alamat"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_alamat"
+        android:textSize="15sp"
+        android:hint="Nomer Handphone"/>
+
+    <EditText
+        android:id="@+id/ed_rg_psswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_hp"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_rg_psswd"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Register"/>
+
+
+</RelativeLayout>
